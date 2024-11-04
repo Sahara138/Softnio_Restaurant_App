@@ -1,0 +1,169 @@
+.customer{
+    width: 100%;
+    padding: 120px 0;
+    position: relative;
+}
+.customer .customer_sideImg_1{
+    position: absolute;
+    top: 159.59px;
+    left: 0;
+}
+.customer .customer_sideImg_2{
+    position: absolute;
+    bottom: 41.5px;
+    right: 0;
+}
+.customer .heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.customer .heading .content .title{
+    display: flex;
+    justify-items: left;
+    align-items: center;
+    gap: 10px;
+}
+.customer .heading .content .title .square{
+    width: 10px;
+    height: 10px;
+    background-color: var(--red-2);
+}
+.customer .heading .content .title h5{
+    font-family: var(--Roboto);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--red-2);
+}
+.customer .heading .content p{
+    margin-top: 16px;
+    font-family: var(--Bebas_Neue);
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 62px;
+    color: var(--Black-2);
+    letter-spacing: 2px;
+}
+.customer .heading .arrow-icon{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 32px;
+}
+.customer .heading .arrow-icon div{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 100%;
+    color: var(--Black);
+    background-color: var(--White);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.customer .heading .arrow-icon div svg{
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.customer .heading .arrow-icon div:hover{
+    color: var(--red-2);
+}
+
+.customer-card{
+    position: relative;
+    margin-top: 60.14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-card .quote_sideImg{
+    position: absolute;
+    bottom: 41.35px;
+    left: 0;
+}
+.customer-card .quote{
+    width: 45%;
+    height: 555.97px;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: flex-start;
+    padding: 71.87px 85.13px;
+    
+}
+.customer-card .quote p{
+    font-size: 28px;
+    margin-top: -20px;
+
+}
+.customer-card .quote div{
+    width: 85%;
+    position: relative;
+}
+.customer-card .quote div .text{
+    font-family: var(--Roboto);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+}
+.customer-card .quote div .customer-intro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 164px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--Black);
+    
+}
+.customer-card .quote div .customer-intro .info .name{
+    font-family: var(--Bebas_Neue);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: var(--Black);
+}
+.customer-card .quote div .customer-intro .info .desc{
+    margin-top: 3px;
+    font-family: var(--Roboto);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--Black-1);
+
+}
+.customer-card .quote div .customer-intro .image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    overflow: hidden;
+    /* border-bottom: 5px solid var(--red-2); */
+    padding-bottom: 18px;
+}
+.customer-card .quote div .line{
+    width: 40px;
+    height: 5px;
+    background-color:var(--red-2) ;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    
+}
+.customer-card .video{
+    width: 55%;
+}
+.customer-card .video .image{
+    width: 100%;
+    height: 555.97px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.customer-card .video .image img{
+    width: 100%;
+    height: 100%;
+}

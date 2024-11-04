@@ -1,0 +1,184 @@
+.Header{
+    width: 100%;
+    height: 1047px;
+    background-image: url("../../../public/images/Hero.png");
+    background-repeat: no-repeat;
+    /* position: relative; */
+    z-index: -1;
+}
+.Header .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35.5px 0;
+}
+.Header .navBar .logo_menu{
+    width: 83%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: left;
+}
+.Header .navBar .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.Header .navBar .logo .image{
+    width: 36.99px;
+    height: 37px;
+}
+.Header .navBar .logo p{
+    font-family: var(--Poppins);
+    font-weight:600;
+    font-size: 28.44px;
+    line-height: 28.4px;
+    color: var(--White);
+}
+.Header .navBar .logo span{
+    font-family: var(--Poppins);
+    font-weight:400;
+    font-size: 28.44px;
+    line-height: 28.4px;
+    color: var(--White);
+}
+.Header .navBar .menu{
+    margin-left: 60px;
+}
+.Header .navBar .menu ul {
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 40px;
+}
+.Header .navBar .menu ul li{
+    font-family: var(--Raleway);
+    font-weight:500;
+    font-size: 15px;
+    color: var(--White);
+}
+.Header .navBar .btn{
+    width: 17%;
+    text-align: right;
+    cursor: pointer;
+}
+.Header .navBar .btn button{
+    background-color: var(--Yellow);
+    padding: 10px 24px;
+    border: 1px solid var(--Yellow);
+    
+}
+.Header .navBar .btn:hover button{
+    background-color: transparent;
+    color: var(--White);
+}
+.Header .navBar .btn button p{
+    font-family: var(--Roboto);
+    font-weight:700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--Black);
+}
+
+
+.Header .Hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 130px;
+}
+.Header .Hero .left {
+    width: 43%;
+    position: absolute;
+    top: 342px;
+    left: 300px;
+    z-index: 99;
+}
+.Header .Hero .left .title{
+    width: 830px;
+    background-color: var(--red );
+
+}
+.Header .Hero .left .title h1{
+    width: 945px;
+    font-family: var(--Bebas_Neue);
+    font-weight:700;
+    font-size: 120px;
+    line-height: 130px;
+    color: var(--White);
+    opacity: 100%;
+    letter-spacing: 1px;
+
+}
+.Header .Hero .left p{
+    width: 559px;
+    margin-top: 16px;
+    font-family: var(--Roboto);
+    font-weight:400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--White);
+}
+.Header .Hero .left .btn{
+    width: 100%;
+    margin-top: 38px;
+}
+.Header .Hero .left .btn button{
+    /* width: 180px; */
+    background-color: var(--Yellow);
+    padding: 16px 24px;
+    border: 1px solid var(--Yellow);
+    cursor: pointer;
+}
+.Header .Hero .left .btn button:hover{
+    background-color: transparent;
+    color: var(--White);
+}
+.Header .Hero .left .btn button span{
+    font-family: var(--Roboto);
+    font-weight:700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--Black);
+}
+
+.Header  .Hero .right{
+    width: 36.5%;
+    position: absolute;
+    top: 238px;
+    right:300px ;
+    z-index: 90;
+
+}
+
+.Header .Hero .right .image{
+    width: 100%;
+    height: 649px;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+
+}
+.Header .Hero .right .image img{
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.Header .Hero .right .flower{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top:-34px;
+    right: -28px; 
+
+}
+.Header .Hero .right .offer{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: -15px;
+    right: -51.5px; 
+    z-index: 99;
+}
