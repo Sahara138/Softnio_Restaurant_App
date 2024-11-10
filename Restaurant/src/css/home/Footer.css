@@ -2,11 +2,11 @@
     width: 100%;
     background-image: url("../../../public/images/Footer.png");
     background-repeat: no-repeat;
-    padding: 120px 0;
     color: var(--White);
     text-align: center;
 }
 .footer h2{
+    padding-top: 120px;
     font-family: var(--Bebas_Neue);
     font-weight: 700;
     font-size: 62px;
@@ -67,6 +67,7 @@
     /* font-weight: 400; */
     font-size: 21px;
     line-height: auto;
+    padding-bottom: 120px;
 }
 .footer .copyright span{
     color: var(--Yellow);

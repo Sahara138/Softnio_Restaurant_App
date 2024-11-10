@@ -59,6 +59,7 @@ const Homepage = () => {
                                 </div>
                                 <p>Among the best Saudi chefs in the world, serving you something beyond flavor. </p>
                                 <div className="btn">
+                                    
                                     <button><Link to="#"><span>Explore Menu</span></Link></button>
                                 </div>
                             </div>
@@ -228,6 +229,7 @@ const Homepage = () => {
                     <div className="customer-card">
                         <img src="../../public/images/Group.png" alt="" className="quote_sideImg" />
                         <div className="quote">
+                            
                             <p><RiDoubleQuotesL /></p>                          <div>
                                 <span className="text">You can't go wrong with Chicken Mandi, 
                                     I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.</span>

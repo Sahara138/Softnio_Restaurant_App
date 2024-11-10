@@ -80,6 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 555.97px;
 }
 .customer-card .quote_sideImg{
     position: absolute;

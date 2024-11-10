@@ -1,8 +1,9 @@
 .Header{
     width: 100%;
-    height: 1047px;
+    /* height: 1047px; */
     background-image: url("../../../public/images/Hero.png");
     background-repeat: no-repeat;
+    background-size: auto;
     /* position: relative; */
     z-index: -1;
 }
@@ -10,11 +11,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
     padding: 35.5px 0;
 }
 .Header .navBar .logo_menu{
     width: 83%;
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
     align-items: center;
     text-align: left;
@@ -23,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
     gap: 6px;
 }
 .Header .navBar .logo .image{
@@ -86,13 +90,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 130px;
 }
 .Header .Hero .left {
     width: 43%;
-    position: absolute;
+    /* position: absolute;
     top: 342px;
-    left: 300px;
+    left: 300px; */
     z-index: 99;
 }
 .Header .Hero .left .title{
@@ -101,7 +106,7 @@
 
 }
 .Header .Hero .left .title h1{
-    width: 945px;
+    width: 110%;
     font-family: var(--Bebas_Neue);
     font-weight:700;
     font-size: 120px;
@@ -144,11 +149,12 @@
 }
 
 .Header  .Hero .right{
-    width: 36.5%;
-    position: absolute;
-    top: 238px;
-    right:300px ;
+    width: auto;
+    position: relative;
+    /*top: 238px;
+    right:300px ; */
     z-index: 90;
+    margin-bottom: 32px;
 
 }
 
@@ -182,3 +188,139 @@
     right: -51.5px; 
     z-index: 99;
 }
+
+
+
+ @media screen and (max-width:576px){
+    .Header .navBar .menu{
+        display: none;
+    }
+    .Header .navBar .btn{
+        display: none;
+    }
+    .Header .navBar .btn button{
+        padding: 13.6px 20.4px;
+    }
+    .Header .navBar .btn button p{
+        font-size: 15.3px;
+        line-height: 20.4px;
+    }
+    .Header .Hero{
+        margin-top: 48px;
+    }
+    .Header .Hero .left{
+        width: 100%;
+    }
+    .Header .Hero .left .title{
+        width: 100%;
+    
+    }
+    .Header .Hero .left .title h1{
+        width: 100%;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0%;
+    }
+    .Header .Hero .left p{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .Header .Hero .left .btn{
+    
+    }
+    .Header  .Hero .right{
+        width: 100%;
+        margin-top: 60px;
+        position: relative;
+        /* position: absolute;
+        top: 238px;
+        right:300px ;
+        z-index: 90; */
+    
+    }
+    .Header .Hero .right .image{
+        width: 100%;
+        height: 100%;
+    }
+    .Header .Hero .right .flower{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top:-16px;
+        right: 0; 
+        z-index: -1;
+    
+    }
+    .Header .Hero .right .offer{
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        bottom: 12.45px;
+        right: 12.45px; 
+        z-index: 99;
+    }
+    /* .Header {
+        width: 100%;
+        height: auto;
+        padding: 0 30px;
+    }
+    .navBar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    } */
+
+    /* .Header .Hero {
+        flex-direction: column;
+        margin-top: 0;
+    } */
+
+    /* .Hero .left {
+        width: 100%;
+        top: auto;
+        left: auto;
+        position: relative;
+        padding: 0 20px;
+        text-align: center;
+    } */
+    /* .Header .Hero .left .title{
+        background-color: transparent;
+        padding: 0;
+    }
+    .Header .Hero .left .title h1 {
+        font-size: 48px;
+        line-height: 56px;
+        width: 100%;
+    }
+
+    .Hero .left p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .Hero .left .btn button {
+        padding: 12px 16px;
+    } */
+
+    /* .Hero .right {
+        width: 100%;
+        /* position: relative;
+        top: auto;
+        right: auto; */
+    /* padding: 0 20px;
+    }
+
+    .Hero .right .image {
+        height: auto;
+    }
+
+    .Hero .right .flower,
+    .Hero .right .offer {
+        width: 60px;
+        height: 60px;
+        position: static;
+    } */ 
+}  
