@@ -1,83 +1,158 @@
 .Header{
     width: 100%;
-    /* height: 1047px; */
-    background-image: url("../../../public/images/Hero.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    /* position: relative; */
-    z-index: -1;
+    height: auto;
+    position: relative;
 }
-.Header .navBar{
+.Header .bg_Img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: var(--red-1);
+
+}
+.navBar{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding: 35.5px 0;
+    
 }
-.Header .navBar .logo_menu{
+.navBar .logo_menu{
     width: 83%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
     text-align: left;
 }
-.Header .navBar .logo{
+.navBar .logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* flex-wrap: wrap; */
     gap: 6px;
 }
-.Header .navBar .logo .image{
+ .navBar .logo .image{
     width: 36.99px;
     height: 37px;
 }
-.Header .navBar .logo p{
+.navBar .logo p{
     font-family: var(--Poppins);
     font-weight:600;
     font-size: 28.44px;
     line-height: 28.4px;
     color: var(--White);
 }
-.Header .navBar .logo span{
+ .navBar .logo span{
     font-family: var(--Poppins);
     font-weight:400;
     font-size: 28.44px;
     line-height: 28.4px;
     color: var(--White);
 }
-.Header .navBar .menu{
+.navBar .modal{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--red-1);
+    z-index: 99;
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+.navBar svg{
+    color: var(--White);
+    font-size: 24px;
+
+}
+.navBar .bar{
+    color: var(--White);
+    display: none;
+}
+.navBar .modal .nav-block{
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 16px; */
+    padding: 35.5px 0;
+    
+}
+.navBar .modal  ul li {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+
+}
+.navBar .modal ul li a{
+    font-family: var(--Raleway);
+    font-weight:700;
+    font-size: 15px;
+    color: var(--White);
+    transition: all 0.5s ease;
+}
+.navBar .modal ul li .active{
+    color: var(--Yellow);
+}
+
+ .navBar .modal ul li:hover{
+    color: var(--Yellow);
+}
+
+
+ .navBar .menu{
     margin-left: 60px;
 }
-.Header .navBar .menu ul {
+
+ .navBar .menu ul {
     display:flex;
     /* justify-content: space-between; */
     align-items: center;
     gap: 40px;
 }
-.Header .navBar .menu ul li{
+
+ .navBar .menu ul li a {
     font-family: var(--Raleway);
     font-weight:500;
     font-size: 15px;
     color: var(--White);
+    transition: all 0.5s ease;
+
 }
-.Header .navBar .btn{
+.navBar .menu ul li .active{
+    color: var(--Yellow);
+}
+
+ .navBar .menu ul li:hover{
+    color: var(--Yellow);
+}
+.navBar .btn{
     width: 17%;
     text-align: right;
     cursor: pointer;
 }
-.Header .navBar .btn button{
+ .navBar .btn button{
     background-color: var(--Yellow);
     padding: 10px 24px;
     border: 1px solid var(--Yellow);
+    cursor: pointer;
+    transition: all 0.5s ease;
     
 }
-.Header .navBar .btn:hover button{
+ .navBar .btn:hover button{
     background-color: transparent;
     color: var(--White);
 }
-.Header .navBar .btn button p{
+.navBar .btn button p{
     font-family: var(--Roboto);
     font-weight:700;
     font-size: 16px;
@@ -91,13 +166,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 130px;
+    padding-top: 238px;
 }
 .Header .Hero .left {
     width: 43%;
-    /* position: absolute;
-    top: 342px;
-    left: 300px; */
     z-index: 99;
 }
 .Header .Hero .left .title{
@@ -135,6 +207,7 @@
     padding: 16px 24px;
     border: 1px solid var(--Yellow);
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 .Header .Hero .left .btn button:hover{
     background-color: transparent;
@@ -191,17 +264,184 @@
 
 
 
+
+@media screen and (max-width:1919px){
+    .Header{
+        width: 100%;
+        height: auto;
+    }
+    .Header .bg_Img{
+        width: 100%;
+        height: 100%;
+    }
+    .Header .Hero .left{
+        width: 43%;
+    }
+    .Header .Hero .left .title{
+        width: 150%;
+    
+    }
+    .Header .Hero .left .title h1{
+        width: 100%;
+        font-size: 80px;
+        line-height: 80px;
+        /* letter-spacing: 0; */
+    }
+    .Header .Hero .left p{
+        width: 90%;
+    }
+    .Header .Hero .right{
+        width: 57%;
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width:1400px){
+    .Header{
+        width: 100%;
+        height: auto;
+    }
+    .Header .bg_Img{
+        width: 100%;
+        height: 100%;
+    }
+    .Header .Hero{
+        margin-top: 100px;
+    }
+    .Header .Hero .left{
+        width: 43%;
+    }
+    .Header .Hero .right{
+        width: 55%;
+    }
+    .Header .Hero .left .title{
+        width: 150%;
+    
+    }
+    .Header .Hero .left .title h1{
+        width: 100%;
+        font-size: 80px;
+        line-height: 80px;
+        /* letter-spacing: 0; */
+    }
+    .Header .Hero .left p{
+        width: 60%;
+    }
+    .Header .Hero .right .offer{
+        position: absolute;
+        bottom: -35.45px;
+        right: -35.45px; 
+        z-index: 99;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .Header{
+        width: 100%;
+        height: auto;
+    }
+    .Header .bg_Img{
+        width: 100%;
+        height: 100%;
+    }
+    .navBar .bar{
+        display: block;
+    }
+    .navBar .modal{
+        display: block;
+    }
+    .Header .Hero{
+        margin-top: 60px;
+    }
+    .navBar .menu{
+        display: none;
+    }
+     .navBar .btn{
+        display: none;
+    }
+    
+     .navBar .btn button{
+        padding: 13.6px 20.4px;
+    } 
+    .Header .Hero .left{
+        width: 100%;
+    }
+    .Header .Hero .left .title {
+        width: 70%;
+    }
+    .Header .Hero .left .title h1{
+        width: 100%;
+        font-size: 80px;
+        line-height: 80px;
+        /* letter-spacing: 0; */
+    }
+    .Header .Hero .left p{
+        width: 60%;
+    }
+
+    .Header  .Hero .right{ 
+        width: 100%;
+        margin-top: 60px;
+        position: relative;
+    }
+    .Header .Hero .right .image{
+        width: 100%;
+        height: 100%;
+    }
+    .Header .Hero .right .flower{
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top:-16px;
+        right: 0; 
+        z-index: -1;
+    
+    }
+    .Header .Hero .right .offer{
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        bottom: 12.45px;
+        right: 12.45px; 
+        z-index: 99;
+    } 
+
+
+}
+
+
+
+
  @media screen and (max-width:576px){
-    .Header .navBar .menu{
+    .Header{
+        width: 100%;
+        height: auto;
+    }
+    .Header .bg_Img{
+        width: 100%;
+        height: 100%;
+    }
+    .navBar .menu{
         display: none;
     }
-    .Header .navBar .btn{
+    .navBar .bar{
+        display: block;
+    }
+    .navBar .modal{
+        display: block;
+    }
+    
+   .navBar .btn{
         display: none;
     }
-    .Header .navBar .btn button{
+     .navBar .btn button{
         padding: 13.6px 20.4px;
     }
-    .Header .navBar .btn button p{
+     .navBar .btn button p{
         font-size: 15.3px;
         line-height: 20.4px;
     }
@@ -227,18 +467,11 @@
         font-size: 16px;
         line-height: 28px;
     }
-    .Header .Hero .left .btn{
-    
-    }
+
     .Header  .Hero .right{
         width: 100%;
         margin-top: 60px;
         position: relative;
-        /* position: absolute;
-        top: 238px;
-        right:300px ;
-        z-index: 90; */
-    
     }
     .Header .Hero .right .image{
         width: 100%;
@@ -261,66 +494,8 @@
         right: 12.45px; 
         z-index: 99;
     }
-    /* .Header {
-        width: 100%;
-        height: auto;
-        padding: 0 30px;
-    }
-    .navBar {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    } */
-
-    /* .Header .Hero {
-        flex-direction: column;
-        margin-top: 0;
-    } */
-
-    /* .Hero .left {
-        width: 100%;
-        top: auto;
-        left: auto;
-        position: relative;
-        padding: 0 20px;
-        text-align: center;
-    } */
-    /* .Header .Hero .left .title{
-        background-color: transparent;
-        padding: 0;
-    }
-    .Header .Hero .left .title h1 {
-        font-size: 48px;
-        line-height: 56px;
-        width: 100%;
-    }
-
-    .Hero .left p {
-        width: 100%;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .Hero .left .btn button {
-        padding: 12px 16px;
-    } */
-
-    /* .Hero .right {
-        width: 100%;
-        /* position: relative;
-        top: auto;
-        right: auto; */
-    /* padding: 0 20px;
-    }
-
-    .Hero .right .image {
-        height: auto;
-    }
-
-    .Hero .right .flower,
-    .Hero .right .offer {
-        width: 60px;
-        height: 60px;
-        position: static;
-    } */ 
+    
 }  
+
+
+

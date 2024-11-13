@@ -37,19 +37,22 @@
 .food .heading .content p{
     margin-top: 16px;
     font-family: var(--Bebas_Neue);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 62px;
     line-height: 62px;
     color: var(--Black-2);
-    letter-spacing: 2px;
 }
-.food .heading .arrow-icon{
+.food .arrow-icon{
     display: flex;
     justify-content: right;
     align-items: center;
     gap: 32px;
 }
-.food .heading .arrow-icon div{
+.food  .small_device_food_icon{
+    display: none;
+
+}
+.food  .arrow-icon div{
     width: 60px;
     height: 60px;
     position: relative;
@@ -57,8 +60,10 @@
     color: var(--Black);
     background-color: var(--White);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
-.food .heading .arrow-icon div svg{
+.food .arrow-icon div svg{
     font-size: 22px;
     font-weight: 700;
     position: absolute;
@@ -66,25 +71,34 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.food .heading .arrow-icon div:hover{
+.food .arrow-icon div:hover{
     color: var(--red-2);
 }
 
 .food .popular-food-item-cards{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 32px;
+    /* grid-template-columns: repeat(4,1fr); */
+    /* gap: 32px; */
     margin-top: 60px;
 }
 .food .popular-food-item-cards .card{
+    width: 100%;
     padding: 38px 32px 32px 32px;
     background-color: var(--White);
     text-align: center;
 }
 .food .popular-food-item-cards .card .food-image{
-
+    width: 186px;
+    height: 124px;
+    overflow: hidden;
+    object-fit: cover;
     text-align: center;
-
+    margin: 0 auto;
+}
+.food .popular-food-item-cards .card .food-image img{
+    width: 100%;
+    height: 100%;
 }
 .food .popular-food-item-cards .card .line{
     width: 57px;
@@ -95,7 +109,7 @@
 }
 .food .popular-food-item-cards .card .title{
     font-family: var(--Bebas_Neue);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     color: var(--Black);
@@ -109,33 +123,92 @@
 }
 
 
+@media screen and (max-width:1919px){
+    /* .food .popular-food-item-cards{
+        grid-template-columns: repeat(3,1fr);
 
-@media screen and (min-width:320px) and (max-width:576px){
+    } */
+    .food .heading .content p{
+        font-size: 56px;
+    }
+    .food .arrow-icon{
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .food .heading .content .title h5{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .food .heading .content p{
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0;
+    }
+    .food .arrow-icon{
+        gap: 18px;
+    }
+    .food .arrow-icon div{
+        width: 40px;
+        height: 40px;
+        
+    }
+    .food .arrow-icon div svg{
+        font-size: 18px;
+    }
+    .food .food_sideImg{
+        display: none;
+    }
+    /* .food .popular-food-item-cards{
+        grid-template-columns: repeat(1,1fr);
+
+    } */
+}
+
+
+/* @media screen and (max-width:992px){
+    .food .popular-food-item-cards{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+} */
+
+
+@media screen and (max-width:576px){
     .food{
         padding: 32px 0;
     }
-    .food .popular-food-item-cards{
+    .food .food_sideImg{
+        display: none;
+    }
+    .food .heading .content .title h5{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .food .heading .content p{
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0;
+    }
+    .food .arrow-icon{
+        display: none;
+    }
+    .food .small_device_food_icon{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+
+    }
+    .food .container .popular-food-item-cards{
         width: 100%;
         grid-template-columns: repeat(1,1fr);
-
-
+        margin-top: 30px;
     }
+
+    
   }
-@media screen and (max-width:1024px){
-    .food .popular-food-item-cards{
-        grid-template-columns: repeat(2,1fr);
-
-    }
-}
-@media screen and (max-width:1400px){
-    .food .popular-food-item-cards{
-        grid-template-columns: repeat(2,1fr);
-
-    }
-}
-@media screen and (max-width:1900px){
-    .food .popular-food-item-cards{
-        grid-template-columns: repeat(3,1fr);
-
-    }
-}

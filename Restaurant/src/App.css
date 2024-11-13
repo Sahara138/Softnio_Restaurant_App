@@ -16,16 +16,28 @@ a{
   margin: 0 auto;
   position: relative;
 }
- @media screen and (max-width:576px){
+@media screen and (min-width:1400px) and (max-width:1919px){
+  .container{
+    padding: 0 240px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1400px){
+  .container{
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width:576px) and (max-width:992px){
   .container{
     padding: 0 30px;
   }
 }
- @media screen and (max-width:1024px){
+ @media screen and (min-width:320px) and (max-width:576px){
   .container{
     padding: 0 30px;
   }
 }
+
+
 :root{
   /* Fonts */
   --Poppins:"Poppins", sans-serif;
@@ -39,6 +51,7 @@ a{
   --White:#FFFFFF;
   --Off-White:#fbf7f2;
   --Yellow:#FEBF00;
+  --Yellow-1:#FFC900;
   --Black:#0A1425;
   --Black-1:#333333;
   --Black-2:#181818;
@@ -46,7 +59,7 @@ a{
   --red-1:#B52B1D;
   --red-2:#BD1F17;
 }
-/* Link{
+NavLink,Link{
   cursor: pointer;
   text-decoration: none;
-} */
+}
